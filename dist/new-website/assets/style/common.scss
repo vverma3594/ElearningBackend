@@ -1,0 +1,49 @@
+body{
+  font-family: $secondaryfont;
+}
+h1,h2,h3,h5,h6{
+  font-family: $primaryfont;
+}
+.cmn-padd{
+  padding: 40px 0;
+}
+.backgorund-light{
+  background: #ececec;
+}
+.backgorund-lgt{
+  background: #fafafa;
+}
+.heading{
+  text-align: center;
+  margin-bottom: 30px;
+  p{
+    color: #bfbfbf;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  h3{
+    color: #3d2768;
+    font-weight: bold;
+    span{
+      font-weight: 400;
+      color:#030303;
+    }
+  }
+}
+
+.cmn-btn{
+  margin: 0 auto;
+  margin-top: 20px;
+  button{
+    background: #3d2768;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+  }
+}

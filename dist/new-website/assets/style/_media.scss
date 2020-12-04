@@ -1,0 +1,47 @@
+@media (max-width:767px) {    
+    header{
+        height: auto !important;
+        padding: 10px 0 !important;
+        .logo {
+            float: none !important;
+            width: 30% !important;
+        }
+
+    }
+    .cmn-padd{
+        padding: 20px 0;
+    }
+    .heading{
+      h3{
+          font-size: 25px;
+      }
+      p{
+          font-size:14px;
+      }
+      
+    }
+    .about-text{
+        padding: 20px 0 0 0 !important;
+    }
+    .testimonial{
+        background: #4f3a73 !important;
+        .testimonial-box{
+            .testimonial-text{
+                text-align: center !important;
+                position: static !important;
+                width: 100% !important;
+                margin-top: 20px !important;
+            }
+        }
+    } 
+
+    
+    footer{
+        .footer-column{
+            .nav-title{
+            margin-bottom: 5px !important;;
+            margin-top: 20px !important;;
+        }
+    } 
+    }
+}
