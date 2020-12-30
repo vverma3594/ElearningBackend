@@ -1,5 +1,4 @@
 "use strict";
-
 const express = require("express");
 require("express-async-errors");
 const app = express();
@@ -22,24 +21,28 @@ app.use(cors())
 app.use(express.static(path.join(__dirname, 'dist/new-website')));
 //MidleWare
 app.use(bodyParser.json()).use(morgan());
-var isXhr = function isLoggedIn(req, res, next) {
-  if (req.xhr) {
+
+// var isXhr = function isLoggedIn(req, res, next) {
+//   if (req.xhr) {
     
-    console.log("coming in if condition in server.js", req.xhr)
-    next();
-  } else {
-    console.log("coming in else condition in server.js", req.xhr)
-    res.sendFile('dist/new-website/index.html', {
-      root: __dirname
-    });
-  }
-};
-app.use(isXhr);
+//     console.log("coming in if condition in server.js", req.xhr)
+//     next();
+//   } else {
+//     console.log("coming in else condition in server.js", req.xhr)
+//     res.sendFile('dist/new-website/index.html', {
+//       root: __dirname
+//     });
+//   }
+// };
+// app.use(isXhr);
+
+
 app.use("/dashboard", require("./routes/admin"));
 app.use("/dashboard", require("./routes/students"));
 app.use("/dashboard", require("./routes/teachers"));
 app.use("/dashboard", require("./routes/registration"));
 app.use("/dashboard", require("./routes/login"));
+app.use("/dashboard", require("./routes/teachers"));
 
 //Not Found Route
 app.set("view engine", "ejs");

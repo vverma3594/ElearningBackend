@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
      
 const registrationSchema = new mongoose.Schema(
   {
-    firstName: {
+    FirstName: {
       type: String,
       required: true,
     },
@@ -33,7 +33,7 @@ const registrationSchema = new mongoose.Schema(
         unique: true,
       },
     },
-    password: {
+    Password: {
       type: String,
       required: true,
     },

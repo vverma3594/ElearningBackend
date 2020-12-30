@@ -5,6 +5,8 @@ var checkAuth = require("../middleware/auth");
 
 const teacherController = require("../controller/teachers");
 
+router.post("/teacherInfobyID/:id",teacherController.getteacherInfoByID),
+
 router.get("/getAllTeacher", checkAuth, teacherController.getAllTeacher);
 
 router.post("/addTeacher", checkAuth, teacherController.addTeacher);
