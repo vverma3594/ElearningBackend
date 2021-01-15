@@ -45,6 +45,10 @@ const registrationSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    fewWord: {
+      type: String,
+      required: false,
+    },
     date: {
       type: Date,
       default: Date.now,
